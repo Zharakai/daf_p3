@@ -33,9 +33,14 @@ nav {
 
 nav a {
     text-decoration: none;
-    font-family: Montserrat, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 1.5rem;
     color: #BF963E;
+}
+
+nav a:hover {
+    color: #70877F;
+    border-bottom: solid 1px;
 }
 
 ul {
@@ -66,10 +71,18 @@ li {
 }
 
 .fa-facebook-square {
+    color: #BF963E;
+}
+
+.fa-facebook-square:hover {
     color: #3b5998;
 }
 
 .fa-instagram-square {
+    color: #BF963E;
+}
+
+.fa-instagram-square:hover {
     background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
     background-clip: text;
     -webkit-background-clip: text;
@@ -77,5 +90,73 @@ li {
 }
 
 .fa-twitter-square {
+    color: #BF963E;
+}
+
+.fa-twitter-square:hover {
     color: #1DA1F2;
 }
+
+/* Banner */
+
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2F2963;
+    margin: 0 -8px 0 -8px;
+    min-height: 500px;
+}
+
+.main_header {
+    display: flex;
+    flex-direction: column;
+    color: aliceblue;
+    font-family: 'Monoton' ,'Monserrat', sans-serif;
+    font-size: 2.5rem;
+    word-spacing: 10px;
+}
+
+.main_header h1 {
+    font-weight: lighter;
+    text-align: center;
+    margin: auto;
+    animation: neon .08s ease-in-out infinite alternate;
+}
+
+/* Movies list */
+
+h2 {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+}
+
+.poster {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/* Animations */
+
+@keyframes neon {
+    from {
+      text-shadow:
+      0 0 6px rgba(202,228,225,0.92),
+      0 0 30px rgba(202,228,225,0.34),
+      0 0 12px rgba(30,132,242,0.52),
+      0 0 21px rgba(30,132,242,0.92),
+      0 0 34px rgba(30,132,242,0.78),
+      0 0 54px rgba(30,132,242,0.92);
+    }
+    to {
+      text-shadow:
+      0 0 6px rgba(202,228,225,0.98),
+      0 0 30px rgba(202,228,225,0.42),
+      0 0 12px rgba(30,132,242,0.58),
+      0 0 22px rgba(30,132,242,0.84),
+      0 0 38px rgba(30,132,242,0.88),
+      0 0 60px rgba(30,132,242,1);
+    }
+  }
