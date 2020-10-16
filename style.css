@@ -15,7 +15,7 @@ header {
 }
 
 .logo p {
-  color: #BF963E;
+  color: #bf963e;
   margin: auto;
   margin-bottom: 5%;
   font-size: 1.5rem;
@@ -24,7 +24,7 @@ header {
 
 .fa-film {
   font-size: 5rem;
-  color: #BF963E;
+  color: #bf963e;
 }
 
 nav {
@@ -36,11 +36,20 @@ nav a {
   text-decoration: none;
   font-family: 'Montserrat', sans-serif;
   font-size: 1.5rem;
-  color: #BF963E;
+  color: #bf963e;
+}
+
+.social a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  font-size: 1.5rem;
 }
 
 nav a:hover {
-  color: #70877F;
+  color: #70877f;
   border-bottom: solid 1px;
 }
 
@@ -62,17 +71,8 @@ nav li {
   flex: 1;
 }
 
-.social a {
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: auto;
-  font-size: 1.5rem;
-}
-
 .fa-facebook-square {
-  color: #BF963E;
+  color: #bf963e;
 }
 
 .fa-facebook-square:hover {
@@ -80,7 +80,7 @@ nav li {
 }
 
 .fa-instagram-square {
-  color: #BF963E;
+  color: #bf963e;
 }
 
 .fa-instagram-square:hover {
@@ -91,11 +91,11 @@ nav li {
 }
 
 .fa-twitter-square {
-  color: #BF963E;
+  color: #bf963e;
 }
 
 .fa-twitter-square:hover {
-  color: #1DA1F2;
+  color: #1da1F2;
 }
 
 /* Banner */
@@ -104,7 +104,7 @@ nav li {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #2F2963;
+  background-color: #2f2963;
   margin: 0 -8px 0 -8px;
   min-height: 500px;
 }
@@ -122,7 +122,7 @@ nav li {
   font-weight: lighter;
   text-align: center;
   margin: auto;
-  animation: neon .08s ease-in-out infinite alternate;
+  animation: neon 0.08s ease-in-out infinite alternate;
 }
 
 /* Movies list */
@@ -132,7 +132,7 @@ h2 {
   font-family: 'Montserrat', sans-serif;
   font-size: 2rem;
   color: aliceblue;
-  background-color: #2F2963;
+  background-color: #2f2963;
   padding: 2%;
   margin-left: -8px;
   margin-right: -8px;
@@ -178,7 +178,7 @@ h2 {
 }
 
 .button:hover {
-  border: solid 1px /*aliceblue*/ rgb(240, 0, 120);
+  border: solid 1px rgb(240, 0, 120);
   box-shadow: 3px 3px 2px 1px rgb(240, 0, 120);
 }
 
@@ -205,7 +205,7 @@ body {
 
 footer {
   font-family: 'Montserrat', sans-serif;
-  background-color:#70877F;
+  background-color: #70877f;
   margin: 1% -8px 0 -8px;
   padding: 1%;
   text-align: center;
@@ -223,6 +223,7 @@ footer a {
   from {
     text-shadow: 0 0 6px rgba(202, 228, 225, 0.92), 0 0 30px rgba(202, 228, 225, 0.34), 0 0 12px rgba(30, 132, 242, 0.52), 0 0 21px rgba(30, 132, 242, 0.92), 0 0 34px rgba(30, 132, 242, 0.78), 0 0 54px rgba(30, 132, 242, 0.92);
   }
+
   to {
     text-shadow: 0 0 6px rgba(202, 228, 225, 0.98), 0 0 30px rgba(202, 228, 225, 0.42), 0 0 12px rgba(30, 132, 242, 0.58), 0 0 22px rgba(30, 132, 242, 0.84), 0 0 38px rgba(30, 132, 242, 0.88), 0 0 60px rgba(30, 132, 242, 1);
   }
