@@ -84,7 +84,7 @@ nav li {
 }
 
 .fa-instagram-square:hover {
-  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -95,7 +95,7 @@ nav li {
 }
 
 .fa-twitter-square:hover {
-  color: #1da1F2;
+  color: #1da1f2;
 }
 
 /* Banner */
@@ -161,7 +161,10 @@ h2 {
   list-style-type: none;
 }
 
-.card p, a, h3, h4 {
+.card p, 
+a, 
+h3, 
+h4 {
   margin-left: 30px;
 }
 
@@ -193,6 +196,26 @@ form {
 .form__infos {
   display: flex;
   flex-direction: column;
+}
+
+.form__news-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__btn {
+  font: bold 1rem 'Montserrat', sans-serif;
+  text-decoration: none;
+  color: rgb(240, 0, 120);
+  padding: 2px 6px 2px 6px;
+  border: solid 1px black;
+  margin-top: 1rem;
+}
+
+.form__btn:hover {
+  border: solid 1px rgb(240, 0, 120);
+  box-shadow: 3px 3px 2px 1px rgb(240, 0, 120);
+  cursor: pointer;
 }
 
 /* Body */

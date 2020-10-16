@@ -30,7 +30,7 @@
                 <li><a href="#films">Liste de films</a></li>
                 <li><a href="#reservation">Préinscription</a></li>
                 <li><a href="#newsletter">Newsletter</a></li>
-                <li><a href="#">Contactez-nous</a></li>
+                <li><a href="contact.html">Contactez-nous</a></li>
             </ul>
         </nav>
         <div class="social">
@@ -276,58 +276,64 @@
         <section id="reservation">
             <h2>Préinscription</h2>
             <form>
-                <fieldset>
-                    <legend>Préinscription</legend>
-                    <div class="form__name">
-                        <label for="firstname">Prénom</label>
-                        <input type="text" name="firstname" id="firstname" required>
-                        <label for="lastname">Nom</label>
-                        <input type="text" name="lastname" id="lastname" required>
-                    </div>
-                    <div class="form__infos">
-                        <label for="mail">E-mail</label>
-                        <input type="email" name="mail" id="mail" required>
+                <div class="form__name">
+                    <label for="firstname">Prénom</label>
+                    <input type="text" name="firstname" id="firstname" required>
+                    <label for="lastname">Nom</label>
+                    <input type="text" name="lastname" id="lastname" required>
+                </div>
+                <div class="form__infos">
+                    <label for="mail">E-mail</label>
+                    <input type="email" name="mail" id="mail" required>
 
-                        <label for="places">Nombre de places</label>
-                        <input type="number" name="places" id="places" class="form-control" min="1" max="10" value="1">
+                    <label for="places">Nombre de places</label>
+                    <input type="number" name="places" id="places" class="form-control" min="1" max="10" value="1">
 
-                        <label for="show">Séance</label>
-                        <select>
-                            <optgroup label="05/08/2021">
-                                <option>Drive</option>
-                                <option>Moonlight</option>
-                            </optgroup>
-                            <optgroup label="06/08/2021">
-                                <option>Gone Girl</option>
-                                <option>La Haine</option>
-                            </optgroup>
-                            <optgroup label="07/08/2021">
-                                <option>Her</option>
-                                <option>Imitation Game</option>
-                            </optgroup>
-                            <optgroup label="08/08/2021">
-                                <option>The Lobster</option>
-                                <option>Melancholia</option>
-                            </optgroup>
-                        </select>
-                    </div>
-                </fieldset>
-                <input type="submit" value="Envoyer">
+                    <label for="show">Séance</label>
+                    <select>
+                        <optgroup label="05/08/2021">
+                            <option>Drive</option>
+                            <option>Moonlight</option>
+                        </optgroup>
+                        <optgroup label="06/08/2021">
+                            <option>Gone Girl</option>
+                            <option>La Haine</option>
+                        </optgroup>
+                        <optgroup label="07/08/2021">
+                            <option>Her</option>
+                            <option>Imitation Game</option>
+                        </optgroup>
+                        <optgroup label="08/08/2021">
+                            <option>The Lobster</option>
+                            <option>Melancholia</option>
+                        </optgroup>
+                    </select>
+                </div>
+                <input type="submit" value="Envoyer" class="form__btn">
             </form>
         </section>
 
         <section id="newsletter">
             <h2>Newsletter</h2>
             <form>
-                <fieldset>
-                    <legend>Newsletter</legend>
-                </fieldset>
+                <div class="form__news-info">
+                    <div class="form__name">
+                        <label for="firstname">Prénom</label>
+                        <input type="text" name="firstname" id="firstname" required>
+                        <label for="lastname">Nom</label>
+                        <input type="text" name="lastname" id="lastname" required>
+                    </div>
+
+                    <label for="mail">E-mail</label>
+                    <input type="email" name="mail" id="mail" required>
+                </div>
+                <input type="submit" value="S'inscire" class="form__btn">
             </form>
         </section>
     </main>
 
     <footer>
-        <p><a href="#">Mentions légales</a></p>
+        <p><a href="legal.html">Mentions légales</a></p>
     </footer>
 </body>
 

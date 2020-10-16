@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+    
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Vibur&display=swap" rel="stylesheet">
+    
+        <link rel="icon" type="image/png" href="logo.png">
+        <link rel="stylesheet" href="style.css">
+    
+        <title>Contactez-nous - Les Films de Plein Air</title>
+    </head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html" class="logo">
+                <i class="fas fa-film"></i>
+                <p>Les Films de Plein Air</p>
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html#films">Liste de films</a></li>
+                <li><a href="index.html#reservation">Préinscription</a></li>
+                <li><a href="index.html#newsletter">Newsletter</a></li>
+                <li><a href="contact.html">Contactez-nous</a></li>
+            </ul>
+        </nav>
+        <div class="social">
+            <a href="#"><i class="fab fa-facebook-square"></i></a>
+            <a href="#"><i class="fab fa-instagram-square"></i></a>
+            <a href="#"><i class="fab fa-twitter-square"></i></a>
+        </div>
+    </header>
+
+    <main>
+        <header class="banner">
+            <div class="main_header">
+                <h1>
+                    festival des films de plein air<br> du 5 au 8 août 2021<br> parc monceau, paris
+                </h1>
+            </div>
+        </header>
+
+        <section>
+            <h2>Contactez-nous</h2>
+
+            <form>
+                <div class="form__name">
+                    <label for="firstname">Prénom</label>
+                    <input type="text" name="firstname" id="firstname" required>
+                    <label for="lastname">Nom</label>
+                    <input type="text" name="lastname" id="lastname" required>
+                </div>
+                <div class="form__infos">
+                    <label for="mail">E-mail</label>
+                    <input type="email" name="mail" id="mail" required>
+
+                    <label for="message">Votre message</label>
+                    <textarea name="message" id="message" class="message" required></textarea>
+                </div>
+                <input type="submit" value="Envoyer" class="form__btn">   
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p><a href="legal.html">Mentions légales</a></p>
+    </footer>
+</body>
+</html>
