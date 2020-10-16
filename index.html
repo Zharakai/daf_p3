@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,23 +10,26 @@
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Vibur&display=swap" rel="stylesheet">
-    
+
     <link rel="icon" type="image/png" href="logo.png">
     <link rel="stylesheet" href="style.css">
 
     <title>Les Films de Plein Air</title>
 </head>
+
 <body>
     <header>
         <div class="logo">
-            <i class="fas fa-film"></i>
-            <p>Les Films de Plein Air</p>
+            <a href="index.html" class="logo">
+                <i class="fas fa-film"></i>
+                <p>Les Films de Plein Air</p>
+            </a>
         </div>
         <nav>
             <ul>
-                <li><a href="#">Liste de films</a></li>
-                <li><a href="#">Préinscription</a></li>
-                <li><a href="#">Newsletter</a></li>
+                <li><a href="#films">Liste de films</a></li>
+                <li><a href="#reservation">Préinscription</a></li>
+                <li><a href="#newsletter">Newsletter</a></li>
                 <li><a href="#">Contactez-nous</a></li>
             </ul>
         </nav>
@@ -40,57 +44,279 @@
         <header class="banner">
             <div class="main_header">
                 <h1>
-                    festival des films de plein air<br>
-                    du 5 au 8 août 2021<br>
-                    parc monceau, paris
+                    festival des films de plein air<br> du 5 au 8 août 2021<br> parc monceau, paris
                 </h1>
             </div>
         </header>
 
-        <section>
+        <section id="films">
             <section>
                 <h2>Jeudi 5 Août</h2>
                 <div class="poster">
-                    <div><img src="./affiches/drive.jpg" alt="Drive affiche"></div>
-                    <div><img src="./affiches/moonlight.jpg" alt="Elle affiche"></div>
+                    <article>
+                        <img src="./affiches/drive.jpg" alt="Drive affiche">
+                        <article class="card">
+                            <h3>Drive</h3>
+                            <h4>Synopsis</h4>
+                            <p>
+                                Un jeune homme solitaire, "The Driver", conduit le jour à Hollywood
+                                pour le cinéma en tant que cascadeur et la nuit pour des truands. 
+                                Ultra professionnel et peu bavard, il a son propre code de conduite. 
+                                Jamais il n’a pris part aux crimes de ses employeurs autrement qu’en 
+                                conduisant - et au volant, il est le meilleur !
+                                Shannon, le manager qui lui décroche tous ses contrats, propose à 
+                                Bernie Rose, un malfrat notoire, d’investir dans un véhicule pour que 
+                                son poulain puisse affronter les circuits de stock-car professionnels. 
+                                Celui-ci accepte mais impose son associé, Nino, dans le projet.
+                                C’est alors que la route du pilote croise celle d’Irene et de son jeune 
+                                fils. Pour la première fois de sa vie, il n’est plus seul.
+                                Lorsque le mari d’Irene sort de prison et se retrouve enrôlé de force 
+                                dans un braquage pour s’acquitter d’une dette, il décide pourtant de 
+                                lui venir en aide. L’expédition tourne mal…
+                                Doublé par ses commanditaires, et obsédé par les risques qui pèsent 
+                                sur Irene, il n’a dès lors pas d’autre alternative que de les traquer 
+                                un à un…
+                            </p>
+                            <ul>
+                                <li>Date de sortie : 5 Octobre 2011</li>
+                                <li>Durée : 1h40</li>
+                                <li>Genre : Action, Thriller</li>
+                                <li>Réalisateur : Nicolas Winding Refn</li>
+                                <li>Acteurs : Ryan Gosling, Carey Mulligan, Bryan Cranston</li>
+                                <li>Nationalité : Américain</li>
+                            </ul>
+                            <p>Séance : 18h30</p>
+                            <a href="#reservation" class="button">Préinscription</a>
+                        </article>
+                    </article>
+                    <article>
+                        <article class="card">
+                            <h3>Moonlight</h3>
+                            <h4>Synopsis</h4>
+                            <p>
+                                Après avoir grandi dans un quartier difficile de Miami, Chiron, 
+                                un jeune homme tente de trouver sa place dans le monde. Moonlight 
+                                évoque son parcours, de l’enfance à l’âge adulte.
+                            </p>
+                            <ul>
+                                <li>Date de sortie : 1 Février 2017</li>
+                                <li>Durée : 1h51</li>
+                                <li>Genre : Drame</li>
+                                <li>Réalisateur : Barry Jenkins</li>
+                                <li>Acteurs : Alex R. Hibbert, Ashton Sanders, Trevante Rhodes</li>
+                                <li>Nationalité : Américain</li>
+                            </ul>
+                            <p>Séance : 20h30</p>
+                            <a href="#reservation" class="button">Préinscription</a>
+                        </article>
+                        <img src="./affiches/moonlight.jpg" alt="Elle affiche">
+                    </article>
                 </div>
             </section>
 
             <section>
                 <h2>Vendredi 6 Août</h2>
                 <div class="poster">
-                    <div><img src="./affiches/gone_girl.jpg" alt="Gone girl affiche"></div>
-                    <div><img src="./affiches/haine.jpg" alt="La Haine affiche"></div>
+                    <article>
+                        <img src="./affiches/gone_girl.jpg" alt="Gone girl affiche">
+                        <article class="card">
+                            <h3>Gone Girl</h3>
+                            <h4>Synopsis</h4>
+                            <p>
+                                À l’occasion de son cinquième anniversaire de mariage, Nick Dunne signale la disparition 
+                                de sa femme, Amy. Sous la pression de la police et l’affolement des médias, l’image du 
+                                couple modèle commence à s’effriter. Très vite, les mensonges de Nick et son étrange 
+                                comportement amènent tout le monde à se poser la même question : a-t-il tué sa femme ?
+                            </p>
+                            <ul>
+                                <li>Date de sortie : 8 octobre 2014</li>
+                                <li>Durée : 2h29</li>
+                                <li>Genre : Thriller, Policier, Drame</li>
+                                <li>Réalisateur : David Fincher</li>
+                                <li>Acteurs : Ben Affleck, Rosamund Pike, Neil Patrick Harris</li>
+                                <li>Nationalité : Américain</li>
+                            </ul>
+                            <p>Séance : 18h30</p>
+                            <a href="#reservation" class="button">Préinscription</a>
+                        </article>
+                    </article>
+                    <article>
+                        <article class="card">
+                            <h3>La Haine</h3>
+                            <h4>Synopsis</h4>
+                            <p>
+                                Abdel Ichah, seize ans est entre la vie et la mort, passé à tabac 
+                                par un inspecteur de police lors d'un interrogatoire. 
+                                Une émeute oppose les jeunes d'une cité HLM aux forces de l'ordre. 
+                                Pour trois d'entre eux, ces 
+                                heures vont marquer un tournant dans leur vie...
+                            </p>
+                            <ul>
+                                <li>Date de sortie : 31 Mai 1995</li>
+                                <li>Durée : 1h35</li>
+                                <li>Genre : Drame</li>
+                                <li>Réalisateur : Mathieu Kassovitz</li>
+                                <li>Acteurs : Vincent Cassel, Hubert Koundé, Saïd Taghmaoui</li>
+                                <li>Nationalité : Français</li>
+                            </ul>
+                            <p>Séance : 21h00</p>
+                            <a href="#reservation" class="button">Préinscription</a>
+                        </article>
+                        <img src="./affiches/haine.jpg" alt="La Haine affiche">
+                    </article>
                 </div>
             </section>
 
             <section>
                 <h2>Samedi 7 Août</h2>
                 <div class="poster">
-                    <div><img src="./affiches/her.jpg" alt="Her affiche"></div>
-                    <div><img src="./affiches/imitation_game.jpg" alt="Imitation Game affiche"></div>
+                    <article>
+                        <img src="./affiches/her.jpg" alt="Her affiche">
+                        <article class="card">
+                            <h3>Her</h3>
+                            <h4>Synopsis</h4>
+                            <p>
+                                Los Angeles, dans un futur proche. Theodore Twombly, un homme sensible au caractère complexe, 
+                                est inconsolable suite à une rupture difficile. Il fait alors l'acquisition d'un programme 
+                                informatique ultramoderne, capable de s'adapter à la personnalité de chaque utilisateur. En 
+                                lançant le système, il fait la connaissance de 'Samantha', une voix féminine intelligente, 
+                                intuitive et étonnamment drôle. Les besoins et les désirs de Samantha grandissent et 
+                                évoluent, tout comme ceux de Theodore, et peu à peu, ils tombent amoureux…
+                            </p>
+                            <ul>
+                                <li>Date de sortie : 19 Mars 2014</li>
+                                <li>Durée : 2h06</li>
+                                <li>Genre : Drame, Romance, Science fiction</li>
+                                <li>Réalisateur : Spike Jonze</li>
+                                <li>Acteurs : Joaquin Phoenix, Amy Adams, Rooney Mara</li>
+                                <li>Nationalité : Américain</li>
+                            </ul>
+                            <p>Séance : 18h30</p>
+                            <a href="#reservation" class="button">Préinscription</a>
+                        </article>
+                    </article>
+                    <article>
+                        <article class="card">
+                            <h3>Imitation Game</h3>
+                            <h4>Synopsis</h4>
+                            <p>
+                                1940 : Alan Turing, mathématicien, cryptologue, est chargé par le gouvernement 
+                                Britannique de percer le secret de la célèbre machine de cryptage allemande Enigma, 
+                                réputée inviolable.
+                            </p>
+                            <ul>
+                                <li>Date de sortie : 28 Janvier 2015</li>
+                                <li>Durée : 1h55</li>
+                                <li>Genre : Biopic, Drame</li>
+                                <li>Réalisateur : Morten Tyldum</li>
+                                <li>Acteurs : Benedict Cumberbatch, Keira Knightley, Matthew Goode</li>
+                                <li>Nationalité : Américain</li>
+                            </ul>
+                            <p>Séance : 20h30</p>
+                            <a href="#reservation" class="button">Préinscription</a>
+                        </article>
+                        <img src="./affiches/imitation_game.jpg" alt="Imitation Game affiche">
+                    </article>
                 </div>
             </section>
 
             <section>
                 <h2>Dimanche 8 Août</h2>
                 <div class="poster">
-                    <div><img src="./affiches/lobster.jpg" alt="The Lobster affiche"></div>
-                    <div><img src="./affiches/melancholia.jpg" alt="Elle affiche"></div>
+                    <article>
+                        <img src="./affiches/lobster.jpg" alt="The Lobster affiche">
+                        <article class="card">
+                            <h3>The Lobster</h3>
+                            <h4>Synopsis</h4>
+                            <p>
+                                Dans un futur proche… Toute personne célibataire est arrêtée, 
+                                transférée à l’Hôtel et a 45 jours pour trouver l’âme soeur. 
+                                Passé ce délai, elle sera transformée en l'animal de son choix. 
+                                Pour échapper à ce destin, un homme s'enfuit et rejoint dans les 
+                                bois un groupe de résistants ; les Solitaires.
+                            </p>
+                            <ul>
+                                <li>Date de sortie : 28 Octobre 2015</li>
+                                <li>Durée : 1h59</li>
+                                <li>Genre : Science fiction, Drame, Romance</li>
+                                <li>Réalisateur : Yórgos Lánthimos</li>
+                                <li>Acteurs : Colin Farrell, Rachel Weisz, Jessica Barden</li>
+                                <li>Nationalités : Irlandais, Britannique, Grec, Français, Néerlandais</li>
+                            </ul>
+                            <p>Séance : 18h30</p>
+                            <a href="#reservation" class="button">Préinscription</a>
+                        </article>
+                    </article>
+                    <article>
+                        <article class="card">
+                            <h3>Melancholia</h3>
+                            <h4>Synopsis</h4>
+                            <p>
+                                À l'occasion de leur mariage, Justine et Michael donnent une somptueuse réception 
+                                dans la maison de la soeur de Justine et de son beau-frère. Pendant ce temps, la 
+                                planète Melancholia se dirige vers la Terre...
+                            </p>
+                            <ul>
+                                <li>Date de sortie : 10 Août 2011</li>
+                                <li>Durée : 2h10</li>
+                                <li>Genre : Science fiction, Drame</li>
+                                <li>Réalisateurs : Kirsten Dunst, Charlotte Gainsbourg, Alexander Skarsgård</li>
+                                <li>Acteurs : Ryan Gosling, Carey Mulligan, Bryan Cranston</li>
+                                <li>Nationalités : Français, Danois, Suédois, Allemand</li>
+                            </ul>
+                            <p>Séance : 20h30</p>
+                            <a href="#reservation" class="button">Préinscription</a>
+                        </article>
+                        <img src="./affiches/melancholia.jpg" alt="Elle affiche">
+                    </article>
                 </div>
             </section>
         </section>
 
-        <section>
+        <section id="reservation">
             <h2>Préinscription</h2>
             <form>
                 <fieldset>
                     <legend>Préinscription</legend>
+                    <div class="form__name">
+                        <label for="firstname">Prénom</label>
+                        <input type="text" name="firstname" id="firstname" required>
+                        <label for="lastname">Nom</label>
+                        <input type="text" name="lastname" id="lastname" required>
+                    </div>
+                    <div class="form__infos">
+                        <label for="mail">E-mail</label>
+                        <input type="email" name="mail" id="mail" required>
+
+                        <label for="places">Nombre de places</label>
+                        <input type="number" name="places" id="places" class="form-control" min="1" max="10" value="1">
+
+                        <label for="show">Séance</label>
+                        <select>
+                            <optgroup label="05/08/2021">
+                                <option>Drive</option>
+                                <option>Moonlight</option>
+                            </optgroup>
+                            <optgroup label="06/08/2021">
+                                <option>Gone Girl</option>
+                                <option>La Haine</option>
+                            </optgroup>
+                            <optgroup label="07/08/2021">
+                                <option>Her</option>
+                                <option>Imitation Game</option>
+                            </optgroup>
+                            <optgroup label="08/08/2021">
+                                <option>The Lobster</option>
+                                <option>Melancholia</option>
+                            </optgroup>
+                        </select>
+                    </div>
                 </fieldset>
+                <input type="submit" value="Envoyer">
             </form>
         </section>
-        
-        <section>
+
+        <section id="newsletter">
             <h2>Newsletter</h2>
             <form>
                 <fieldset>
@@ -101,7 +327,8 @@
     </main>
 
     <footer>
-        <p>Mentions légales</p>
+        <p><a href="#">Mentions légales</a></p>
     </footer>
 </body>
+
 </html>
