@@ -44,7 +44,7 @@
         <header class="banner">
             <div class="main_header">
                 <h1>
-                    festival des films de plein air<br> du 5 au 8 août 2021<br> parc monceau, paris
+                    festival des films de plein air<br> du <span class="driveColor">5</span> au <span class="driveColor">8 août 2021</span><br> parc monceau, paris
                 </h1>
             </div>
         </header>
@@ -106,7 +106,7 @@
                                 <li>Acteurs : Alex R. Hibbert, Ashton Sanders, Trevante Rhodes</li>
                                 <li>Nationalité : Américain</li>
                             </ul>
-                            <p>Séance : 20h30</p>
+                            <p>Séance : 21h30</p>
                             <a href="#reservation" class="button">Préinscription</a>
                         </article>
                         <img src="./affiches/moonlight.jpg" alt="Elle affiche">
@@ -159,7 +159,7 @@
                                 <li>Acteurs : Vincent Cassel, Hubert Koundé, Saïd Taghmaoui</li>
                                 <li>Nationalité : Français</li>
                             </ul>
-                            <p>Séance : 21h00</p>
+                            <p>Séance : 21h30</p>
                             <a href="#reservation" class="button">Préinscription</a>
                         </article>
                         <img src="./affiches/haine.jpg" alt="La Haine affiche">
@@ -212,7 +212,7 @@
                                 <li>Acteurs : Benedict Cumberbatch, Keira Knightley, Matthew Goode</li>
                                 <li>Nationalité : Américain</li>
                             </ul>
-                            <p>Séance : 20h30</p>
+                            <p>Séance : 21h30</p>
                             <a href="#reservation" class="button">Préinscription</a>
                         </article>
                         <img src="./affiches/imitation_game.jpg" alt="Imitation Game affiche">
@@ -264,7 +264,7 @@
                                 <li>Acteurs : Ryan Gosling, Carey Mulligan, Bryan Cranston</li>
                                 <li>Nationalités : Français, Danois, Suédois, Allemand</li>
                             </ul>
-                            <p>Séance : 20h30</p>
+                            <p>Séance : 21h30</p>
                             <a href="#reservation" class="button">Préinscription</a>
                         </article>
                         <img src="./affiches/melancholia.jpg" alt="Elle affiche">
@@ -273,7 +273,7 @@
             </section>
         </section>
 
-        <section id="reservation">
+        <section id="reservation" class="reservation">
             <h2>Préinscription</h2>
             <form>
                 <div class="form__name">
@@ -284,7 +284,7 @@
                 </div>
                 <div class="form__infos">
                     <label for="mail">E-mail</label>
-                    <input type="email" name="mail" id="mail" required>
+                    <input type="email" name="mail" id="mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$" required>
 
                     <label for="places">Nombre de places</label>
                     <input type="number" name="places" id="places" class="form-control" min="1" max="10" value="1">
@@ -313,7 +313,7 @@
             </form>
         </section>
 
-        <section id="newsletter">
+        <section id="newsletter" class="newsletter">
             <h2>Newsletter</h2>
             <form>
                 <div class="form__news-info">
@@ -325,7 +325,7 @@
                     </div>
 
                     <label for="mail">E-mail</label>
-                    <input type="email" name="mail" id="mail" required>
+                    <input type="email" name="mail" id="mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$" required>
                 </div>
                 <input type="submit" value="S'inscire" class="form__btn">
             </form>

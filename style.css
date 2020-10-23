@@ -125,6 +125,10 @@ nav li {
   animation: neon 0.08s ease-in-out infinite alternate;
 }
 
+.driveColor {
+  animation: neonDrive 0.08s ease-in-out infinite alternate;
+}
+
 /* Movies list */
 
 h2 {
@@ -165,6 +169,17 @@ h2 {
   margin-left: 30px;
 }
 
+/* Newsletter & Reservation */
+
+.newsletter, .reservation {
+  /*min-height: 400px;*/
+  margin: 5% 0 5% 0;
+}
+
+.newsletter h2, .reservation h2 {
+  margin-bottom: 55px;
+}
+
 /* Buttons */
 
 .button {
@@ -188,6 +203,26 @@ form {
   width: fit-content;
   margin: auto;
   font-family: 'Montserrat', sans-serif;
+}
+
+form input {
+  border-color: rgb(240, 0, 120);
+  border-width: 0 0 1px 0;
+  height: 2rem;
+}
+
+form textarea {
+  border-color: rgb(240, 0, 120);
+}
+
+form select {
+  border-color: rgb(240, 0, 120);
+  border-width: 0 0 1px 0;
+  height: 2rem;
+}
+
+form label {
+  padding: 2% 0 2% 0;
 }
 
 .form__infos {
@@ -215,6 +250,45 @@ form {
   cursor: pointer;
 }
 
+.message {
+  height: 100px;
+  max-width: 100%;
+}
+
+/* Contact */
+
+.container_form_map {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row-reverse;
+}
+
+.form_contact {
+  margin: 0;
+}
+
+.map {
+  margin : 0 5% 0 0;
+}
+
+.phone {
+  margin-top: 1%;
+  display: flex;
+  align-items: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+}
+
+.phone p {
+  margin-left: 3px;
+}
+
+.fa-phone-square-alt {
+  font-size: 3rem;
+  color: #454372;
+}
+
 /* Body */
 
 body {
@@ -228,7 +302,7 @@ footer {
   background-color: #70877f;
   margin: 1% -8px 0 -8px;
   padding: 1%;
-  text-align: center;
+  text-align: left;
 }
 
 footer a {
@@ -246,5 +320,15 @@ footer a {
 
   to {
     text-shadow: 0 0 6px rgba(202, 228, 225, 0.98), 0 0 30px rgba(202, 228, 225, 0.42), 0 0 12px rgba(30, 132, 242, 0.58), 0 0 22px rgba(30, 132, 242, 0.84), 0 0 38px rgba(30, 132, 242, 0.88), 0 0 60px rgba(30, 132, 242, 1);
+  }
+}
+
+@keyframes neonDrive {
+  from {
+    text-shadow: 0 0 6px rgba(228, 206, 202, 0.92), 0 0 30px rgba(228, 209, 202, 0.34), 0 0 12px rgba(240, 0, 120, 0.52), 0 0 21px rgba(240, 0, 120, 0.92), 0 0 34px rgba(240, 0, 120, 0.78), 0 0 54px rgba(240, 0, 120, 0.92);
+  }
+
+  to {
+    text-shadow: 0 0 6px rgba(228, 206, 202, 0.98), 0 0 30px rgba(228, 209, 202, 0.42), 0 0 12px rgba(240, 0, 120, 0.58), 0 0 22px rgba(240, 0, 120, 0.84), 0 0 38px rgba(240, 0, 120, 0.88), 0 0 60px rgba(240, 0, 120, 1);
   }
 }

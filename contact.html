@@ -42,7 +42,7 @@
         <header class="banner">
             <div class="main_header">
                 <h1>
-                    festival des films de plein air<br> du 5 au 8 août 2021<br> parc monceau, paris
+                    festival des films de plein air<br> du <span class="driveColor">5</span> au <span class="driveColor">8 août 2021</span><br> parc monceau, paris
                 </h1>
             </div>
         </header>
@@ -50,22 +50,35 @@
         <section>
             <h2>Contactez-nous</h2>
 
-            <form>
-                <div class="form__name">
-                    <label for="firstname">Prénom</label>
-                    <input type="text" name="firstname" id="firstname" required>
-                    <label for="lastname">Nom</label>
-                    <input type="text" name="lastname" id="lastname" required>
-                </div>
-                <div class="form__infos">
-                    <label for="mail">E-mail</label>
-                    <input type="email" name="mail" id="mail" required>
+            <div class="container_form_map">
+                <form class="form_contact">
+                    <div class="form__name">
+                        <label for="firstname">Prénom</label>
+                        <input type="text" name="firstname" id="firstname" required>
+                        <label for="lastname">Nom</label>
+                        <input type="text" name="lastname" id="lastname" required>
+                    </div>
+                    <div class="form__infos">
+                        <label for="mail">E-mail</label>
+                        <input type="email" name="mail" id="mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$" required>
 
-                    <label for="message">Votre message</label>
-                    <textarea name="message" id="message" class="message" required></textarea>
+                        <label for="message">Votre message</label>
+                        <textarea name="message" id="message" class="message" required></textarea>
+                    </div>
+                    <input type="submit" value="Envoyer" class="form__btn">   
+                </form>
+
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2623.8735531366574!2d2.3067663159035074!3d48.87968700716066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66fbe98f714c3%3A0xe62425fddeddc402!2sParc%20Monceau!5e0!3m2!1sfr!2sfr!4v1603034710370!5m2!1sfr!2sfr" width="800" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    <div class="phone">
+                        <i class="fas fa-phone-square-alt"></i>
+                        <p>01 00 01 02 03</p>
+                    </div>
                 </div>
-                <input type="submit" value="Envoyer" class="form__btn">   
-            </form>
+            </div>
+            
+
+            
         </section>
     </main>
     <footer>
