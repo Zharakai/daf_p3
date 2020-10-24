@@ -450,3 +450,50 @@ footer a {
     font-size: 3rem;
   }
 }
+
+@media all and (max-width: 424px) {
+  @-webkit-viewport {
+    width: device-width;
+  }
+
+  h1 {
+    font-size: 50px;
+  }
+
+  .poster img {
+    max-width: 350px;
+  }
+
+  .card {
+    max-width: 350px;
+  }
+
+  .poster:hover > .card {
+    max-width: 350px;
+  }
+}
+
+@media all and (max-width: 374px) {
+  @-webkit-viewport {
+    width: device-width;
+  }
+
+  h1 {
+    font-size: 50px;
+  }
+
+  .poster img {
+    max-width: 300px;
+  }
+
+  .card {
+    max-width: 300px;
+    max-height: 400px;
+    overflow: auto;
+  }
+
+  .poster:hover > .card {
+    max-width: 300px;
+    
+  }
+}
