@@ -15,7 +15,6 @@ header {
 }
 
 .logo p {
-  /* color: #bf963e; */
   color: rgb(240, 0, 120);
   margin: auto;
   margin-bottom: 5%;
@@ -25,7 +24,6 @@ header {
 
 .fa-film {
   font-size: 5rem;
-  /* color: #bf963e; */
   color: rgb(240, 0, 120);
 }
 
@@ -410,7 +408,6 @@ footer a {
     justify-content: flex-end;
     align-items: center;
     margin-right: 5%;
-    
   }
 
   nav a::after {
