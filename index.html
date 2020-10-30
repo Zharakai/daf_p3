@@ -50,11 +50,11 @@
             </div>
         </header>
 
-        <section id="films">
+        <div id="films">
             <section>
                 <h2>Jeudi 5 Août</h2>
                 <div class="posters">
-                    <article class="poster">
+                    <div class="poster">
                         <img src="./affiches/drive.jpg" alt="Drive affiche">
                         <article class="card card_driver">
                             <h3>Drive</h3>
@@ -77,8 +77,8 @@
                             <p>Séance : 18h30</p>
                             <a href="#reservation" class="button">Préinscription</a>
                         </article>
-                    </article>
-                    <article class="poster">
+                    </div>
+                    <div class="poster">
                         <article class="card card_moonlight">
                             <h3>Moonlight</h3>
                             <h4>Synopsis</h4>
@@ -99,14 +99,14 @@
                             <a href="#reservation" class="button">Préinscription</a>
                         </article>
                         <img src="./affiches/moonlight.jpg" alt="Elle affiche">
-                    </article>
+                    </div>
                 </div>
             </section>
 
             <section>
                 <h2>Vendredi 6 Août</h2>
                 <div class="posters">
-                    <article class="poster">
+                    <div class="poster">
                         <img src="./affiches/gone_girl.jpg" alt="Gone girl affiche">
                         <article class="card card_girl">
                             <h3>Gone Girl</h3>
@@ -128,8 +128,8 @@
                             <p>Séance : 18h30</p>
                             <a href="#reservation" class="button">Préinscription</a>
                         </article>
-                    </article>
-                    <article class="poster">
+                    </div>
+                    <div class="poster">
                         <article class="card card_haine">
                             <h3>La Haine</h3>
                             <h4>Synopsis</h4>
@@ -152,14 +152,14 @@
                             <a href="#reservation" class="button">Préinscription</a>
                         </article>
                         <img src="./affiches/haine.jpg" alt="La Haine affiche">
-                    </article>
+                    </div>
                 </div>
             </section>
 
             <section>
                 <h2>Samedi 7 Août</h2>
                 <div class="posters">
-                    <article class="poster">
+                    <div class="poster">
                         <img src="./affiches/her.jpg" alt="Her affiche">
                         <article class="card card_her">
                             <h3>Her</h3>
@@ -183,8 +183,8 @@
                             <p>Séance : 18h30</p>
                             <a href="#reservation" class="button">Préinscription</a>
                         </article>
-                    </article>
-                    <article class="poster">
+                    </div>
+                    <div class="poster">
                         <article class="card card_imitation">
                             <h3>Imitation Game</h3>
                             <h4>Synopsis</h4>
@@ -205,14 +205,14 @@
                             <a href="#reservation" class="button">Préinscription</a>
                         </article>
                         <img src="./affiches/imitation_game.jpg" alt="Imitation Game affiche">
-                    </article>
+                    </div>
                 </div>
             </section>
 
             <section>
                 <h2>Dimanche 8 Août</h2>
                 <div class="posters">
-                    <article class="poster">
+                    <div class="poster">
                         <img src="./affiches/lobster.jpg" alt="The Lobster affiche">
                         <article class="card card_lobster">
                             <h3>The Lobster</h3>
@@ -235,8 +235,8 @@
                             <p>Séance : 18h30</p>
                             <a href="#reservation" class="button">Préinscription</a>
                         </article>
-                    </article>
-                    <article class="poster">
+                    </div>
+                    <div class="poster">
                         <article class="card card_melancholia">
                             <h3>Melancholia</h3>
                             <h4>Synopsis</h4>
@@ -257,10 +257,10 @@
                             <a href="#reservation" class="button">Préinscription</a>
                         </article>
                         <img src="./affiches/melancholia.jpg" alt="Elle affiche">
-                    </article>
+                    </div>
                 </div>
             </section>
-        </section>
+        </div>
 
         <section id="reservation" class="reservation">
             <h2>Préinscription</h2>
@@ -279,7 +279,7 @@
                     <input type="number" name="places" id="places" class="form-control" min="1" max="10" value="1">
 
                     <label for="show">Séance</label>
-                    <select>
+                    <select name="show" id="show">
                         <optgroup label="05/08/2021">
                             <option>Drive</option>
                             <option>Moonlight</option>
@@ -307,14 +307,14 @@
             <form>
                 <div class="form__news-info">
                     <div class="form__name">
-                        <label for="firstname">Prénom</label>
-                        <input type="text" name="firstname" id="firstname" required>
-                        <label for="lastname">Nom</label>
-                        <input type="text" name="lastname" id="lastname" required>
+                        <label for="firstname_news">Prénom</label>
+                        <input type="text" name="firstname_news" id="firstname_news" required>
+                        <label for="lastname_news">Nom</label>
+                        <input type="text" name="lastname_news" id="lastname_news" required>
                     </div>
 
-                    <label for="mail">E-mail</label>
-                    <input type="email" name="mail" id="mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$" required>
+                    <label for="mail_news">E-mail</label>
+                    <input type="email" name="mail_news" id="mail_news" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$" required>
                 </div>
                 <input type="submit" value="S'inscire" class="form__btn">
             </form>
@@ -323,6 +323,11 @@
 
     <footer>
         <p><a href="legal.html">Mentions légales</a></p>
+        <p class="footer__social">
+            <a href="#" title="Facebook"><i class="fab fa-facebook-square"></i></a>
+            <a href="#" title="Instagram"><i class="fab fa-instagram-square"></i></a>
+            <a href="#" title="Twitter"><i class="fab fa-twitter-square"></i></a>
+        </p>
     </footer>
 </body>
 
