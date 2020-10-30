@@ -87,7 +87,9 @@ nav li {
   flex: 1;
 }
 
-.fa-facebook-square, .fa-instagram-square, .fa-twitter-square {
+.fa-facebook-square, 
+.fa-instagram-square, 
+.fa-twitter-square {
   color: #454372;
 }
 
@@ -178,7 +180,8 @@ h2 {
   background-color: rgba(236, 236, 236, 0.95);
 }
 
-.poster:hover > .card_moonlight {
+.poster:hover > .card_moonlight,
+.poster:hover > .card_imitation {
   width: 514px;
 }
 
@@ -192,10 +195,6 @@ h2 {
 
 .poster:hover > .card_her {
   width: 471px;
-}
-
-.poster:hover > .card_imitation {
-  width: 514px;
 }
 
 .poster:hover > .card_lobster, .card_melancholia {
@@ -217,8 +216,9 @@ h2 {
 
 /* Newsletter & Reservation */
 
-.newsletter, .reservation {
-  /*min-height: 400px;*/
+.newsletter, 
+.reservation {
+  /* min-height: 400px; */
   margin: 5% 0 5% 0;
 }
 
@@ -263,6 +263,7 @@ form input {
 
 form textarea {
   border-color: rgb(240, 0, 120);
+  resize: vertical;
 }
 
 form select {
@@ -448,6 +449,63 @@ footer a {
   }
 }
 
+@media all and (max-width: 767px) {
+  @-webkit-viewport {
+    width: device-width;
+  }
+
+  h1 {
+    font-size: 50px;
+  }
+
+  .poster img {
+    max-width: 400px;
+  }
+
+  .card {
+    max-width: 400px;
+    max-height: 533.33px;
+    overflow: auto;
+  }
+
+  .card_driver {
+    max-height: 608.69px;
+  }
+
+  .card_moonlight, 
+  .card_imitation {
+    max-height: 544.73px;
+  }
+
+  .card_girl {
+    max-height: 588.23px;
+  }
+
+  .card_haine {
+    max-height: 545.8px;
+  }
+
+  .card_her {
+    max-height: 594.47px;
+  }
+
+  .card .button {
+    margin-bottom: 3%;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+  }
+
+  .form__name {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 @media all and (max-width: 424px) {
   @-webkit-viewport {
     width: device-width;
@@ -463,6 +521,29 @@ footer a {
 
   .card {
     max-width: 350px;
+    max-height: 466.66px;
+    overflow: auto;
+  }
+
+  .card_driver {
+    max-height: 532.59px;
+  }
+
+  .card_moonlight, 
+  .card_imitation {
+    max-height: 476.64px;
+  }
+
+  .card_girl {
+    max-height: 514.7px;
+  }
+
+  .card_haine {
+    max-height: 477.58px;
+  }
+
+  .card_her {
+    max-height: 520.16px;
   }
 
   .poster:hover > .card {
@@ -475,10 +556,6 @@ footer a {
     width: device-width;
   }
 
-  h1 {
-    font-size: 50px;
-  }
-
   .poster img {
     max-width: 300px;
   }
@@ -489,8 +566,28 @@ footer a {
     overflow: auto;
   }
 
+  .card_driver {
+    max-height: 456.52px;
+  }
+
+  .card_moonlight,
+  .card_imitation {
+    max-height: 408.55px;
+  }
+
+  .card_girl {
+    max-height: 441.17px;
+  }
+
+  .card_haine {
+    max-height: 409.34px;
+  }
+
+  .card_her {
+    max-height: 445.86px;
+  }
+
   .poster:hover > .card {
     max-width: 300px;
-    
   }
 }
