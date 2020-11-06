@@ -87,8 +87,8 @@ nav li {
   flex: 1;
 }
 
-.fa-facebook-square, 
-.fa-instagram-square, 
+.fa-facebook-square,
+.fa-instagram-square,
 .fa-twitter-square {
   color: #454372;
 }
@@ -154,7 +154,6 @@ h2 {
 
 .posters {
   display: flex;
-  /* flex-direction: column; */
   align-items: center;
   justify-content: space-evenly;
   margin: 5% 10%;
@@ -216,9 +215,8 @@ h2 {
 
 /* Newsletter & Reservation */
 
-.newsletter, 
+.newsletter,
 .reservation {
-  /* min-height: 400px; */
   margin: 5% 0 5% 0;
 }
 
